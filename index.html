@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
+<link rel="stylesheet" href="style.css">
+
+<head>
+    
+    <title>Betting Calcuator</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" />
+    
+    <script>
+        
+        function myFunction(){
+         
+            var popup = document.getElementById("myPopup"); 
+            popup.classList.toggle("show");
+            }
+        
+        
+    </script>
+
+</head>
+
 <body>
 
-<img src="images/UFC.jpg" alt="UFC" style="width:10%">
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
+    <img src="images/UFC.jpg" alt="UFC fighter Shogun Rua promo photo" style="width:20%"/>
+
+    <div style="clear:both;"></div>
+
+    <div class="popup" onclick="myFunction()">Place Your Bet!
+
+        <span class="popuptext" id="myPopup">BET PLACED!!</span>
+        
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <div class="body">
+
+        <h1>BETTING PERCENTAGE CALCULATOR</h1>
+        <p> Change your -/+ lines to percentages </p>
+        <p> Change your fractional lines to percentages </p>
+        <p> Enter betting lines below:</p>
+
+        <form>
+
+            <p> Enter Underdog Line (denoted by +):</p>
+            <input type="text" id= udog placeholder="Ex: +200"><br>
+
+            <p> Enter Favourite Line (denoted by -):</p>
+            <input type="text" id="fav" placeholder="Ex: -150"><br>
+           
+        </form>
+
+
+        <p> Email <a href="http://raymondflaherty86@gmail.com"> RayFlaherty</a> for more infomration</p>
+        <p> Webpage design &#169 2022 by Raymond Flaherty </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/linkedin.png" width="5%" alt="LinkedIn Profile"/></a>
+
+
+
+    </div>
+
+
 
 </body>
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+
+
 </html>
